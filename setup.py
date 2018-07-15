@@ -20,7 +20,7 @@ setup(name="ofxstatement-austrian",
       license="GPLv3",
       keywords=[
           "ofxstatement", "easybank", "ing-diba",
-          "livebank", "raiffeisen", "oberbank"],
+          "livebank", "raiffeisen", "oberbank", "bankaustria"],
       classifiers=[
           "Development Status :: 3 - Alpha",
           "Programming Language :: Python :: 3",
@@ -44,7 +44,8 @@ setup(name="ofxstatement-austrian",
               "ing-diba = ofxstatement.plugins.ingdiba:IngDiBaPlugin",
               "livebank = ofxstatement.plugins.livebank:LivebankPlugin",
               "raiffeisen = ofxstatement.plugins.raiffeisen:RaiffeisenPlugin",
-              "oberbank = ofxstatement.plugins.oberbank:OberbankPlugin"
+              "oberbank = ofxstatement.plugins.oberbank:OberbankPlugin",
+              "bankaustria = ofxstatement.plugins.bankaustria:BankAustriaPlugin",  # noqa: E501
           ]
       },
       install_requires=["ofxstatement"],
