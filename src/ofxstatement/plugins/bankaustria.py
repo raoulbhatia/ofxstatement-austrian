@@ -145,6 +145,7 @@ class BankAustriaCsvParser(CsvStatementParser):
 
         else:
             stmtline.memo = line[2]
+            raise NotImplementedError
 
         # Simple cleanup
         stmtline.payee = clean_multiple_whitespaces(stmtline.payee)
